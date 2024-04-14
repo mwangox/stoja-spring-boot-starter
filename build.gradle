@@ -1,7 +1,7 @@
 import org.springframework.boot.gradle.plugin.SpringBootPlugin
 
 plugins {
-    id 'java'
+    id 'java-library'
     id 'org.springframework.boot' version '3.2.4' apply false
     id 'io.spring.dependency-management' version '1.1.4'
 }
@@ -39,12 +39,17 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-    implementation 'com.github.mwangox:stoja:1.0.7'
+    api 'com.github.mwangox:stoja:1.0.7'
 }
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs.add("-parameters")
 }
