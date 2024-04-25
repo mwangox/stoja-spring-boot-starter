@@ -26,14 +26,6 @@ configurations {
     }
 }
 
-//bootJar{
-//    enabled =true
-//}
-//jar {
-//    enabled =true
-//   //archiveClassifier.set('')
-//}
-
 repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' }
@@ -43,7 +35,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-    api 'com.github.mwangox:stoja:1.0.7'
+    api 'com.github.mwangox:stoja:1.0.9'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 }
 
