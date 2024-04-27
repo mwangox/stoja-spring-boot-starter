@@ -2,7 +2,7 @@
 
 
 A spring boot starter implementation for [stoja](https://github.com/mwangox/stoja) java library. A developer is required to just include this dependency
-and inject `StooClient` into class(s) that wants to interact with `StooKV`.
+and inject `StooClient` into a spring component that wants to interact with `StooKV`.
 
 ## Installation
 
