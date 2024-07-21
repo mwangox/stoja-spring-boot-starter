@@ -17,7 +17,7 @@ repositories {
 
 ```groovy
 dependencies {
-    implementation 'com.github.mwangox:stoja-spring-boot-starter:4722a75207'
+    implementation 'com.github.mwangox:stoja-spring-boot-starter:1.0.6'
 }
 ```
 
